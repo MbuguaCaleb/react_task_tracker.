@@ -1,9 +1,35 @@
-const Header = () => {
+import PropTypes from 'prop-types'
+import Button from './Button';
+
+
+const Header = ({title}) => {
     return (
-        <header>
-            <h1>Task Tracker</h1>
+        <header className='header'>
+            <h1>{title}</h1>
+            <Button color='green' text='Add'/>
         </header>
     )
 }
+
+
+// //default props
+Header.defaultProps ={
+    title:"Task Tracker"
+}
+
+
+//Proptypes make your code more robust
+//Its more like assigning types to typescript
+Header.propTypes={
+    title:PropTypes.string.isRequired
+}
+
+
+//css in js
+// const headingStyle ={
+//     color:'red', 
+//     backgroundColor:'black'
+// }
+
 
 export default Header

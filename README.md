@@ -5,6 +5,38 @@
 
 2.Jsx (I can now be able to return my HTML directly from within my javascript).
 
+3.Props is what you want to be passed into your component dynamically.
+
+You may as well have default props.
+
+//default props
+Header.defaultProps ={
+    title:"Caleb Mbugua"
+}
+
+4.Proptypes bring more of typescript functionality into react.
+
+Header.propTypes={
+    title:PropTypes.string.isRequired
+}
+
+5.Styling in React
+
+
+(a)Inline
+
+ <h1 style={{color:'red', backgroundColor:'black'}}>{title}</h1>
+
+(b)CSS In Js
+
+ <h1 style={headingStyle}>{title}</h1>
+
+// const headingStyle ={
+//     color:'red',
+//     backgroundColor:'black'
+// }
+
+
 ```
 
 **Sample class based component**
