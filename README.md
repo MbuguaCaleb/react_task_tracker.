@@ -36,6 +36,12 @@ Header.propTypes={
 //     backgroundColor:'black'
 // }
 
+6.As i loop through using React i must have a unique key ID
+
+  {tasks.map((task)=>(
+    <h3 key={task.id}>{task.text}</h3>
+  ))}
+
 
 ```
 
